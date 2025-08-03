@@ -176,3 +176,12 @@
                   
                 }
 }
+
+        @media (max-width: 450px) {
+
+                .container {
+                   margin-right:50px
+                  
+                }
+}
+
