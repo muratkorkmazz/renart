@@ -17,31 +17,31 @@ function App() {
 
 
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   const myHeaders = new Headers();
-  //   myHeaders.append("x-api-key", "sk_44Af29374bB3089e94e2f1f233598b628d1F914DFAb7d974");
+    const myHeaders = new Headers();
+    myHeaders.append("x-api-key", "sk_44Af29374bB3089e94e2f1f233598b628d1F914DFAb7d974");
     
-  //   const requestOptions = {
-  //      method: "GET",
-  //      headers: myHeaders,
-  //      redirect: "follow"
-  //   };
+    const requestOptions = {
+       method: "GET",
+       headers: myHeaders,
+       redirect: "follow"
+    };
     
-  //   fetch("https://gold.g.apised.com/v1/latest?metals=XAU&base_currency=USD&weight_unit=gram", requestOptions)
-  //      .then((response) => response.json())
-  //      .then((result) =>   setGoldPrice(result.data.metal_prices.XAU.price_24k) )
+    fetch("https://gold.g.apised.com/v1/latest?metals=XAU&base_currency=USD&weight_unit=gram", requestOptions)
+       .then((response) => response.json())
+       .then((result) =>   setGoldPrice(result.data.metal_prices.XAU.price_24k) )
       
       
-  //      .catch((error) => console.error(error));
+       .catch((error) => console.error(error));
 
 
-  // }, [])
+  }, [])
 
 
   useEffect(() => {
 
-    fetch("http://localhost:3001/api/fetch-data") // <-- Replace with your real API
+    fetch("https://renart-g01b.onrender.com/api/fetch-data") // 
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(error => console.error('Error:', error));
