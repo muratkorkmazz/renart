@@ -28,18 +28,10 @@ app.get("/api/fetch-data",(req,res)=>{
 
 
 
-
-
-
-// search api.....
-
-
-
-
-
-app.listen(3001, () => {
+app.listen(3000, () => {
   console.log('Server running at http://localhost:3001/');
 });
+
 
 
 
