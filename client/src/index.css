@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "avenir";   /*Can be any text*/
+  src: local("Avenir.ttf"),
+    url("./fonts/Avenir.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "medium";   /*Can be any text*/
+  src: local("Medium.ttf"),
+    url("./fonts/Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "regular";   /*Can be any text*/
+  src: local("Regular.otf"),
+    url("./fonts/Regular.otf") format("truetype");
+}
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
