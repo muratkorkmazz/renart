@@ -6,7 +6,7 @@ const cors=require("cors");
 const app = express();
 
 
-app.use(cors)
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send("try ... ")  
@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
 
 
 
-app.get("/fetch-data",(req,res)=>{
-  console.log(products);
+app.get("/api/fetch-data",(req,res)=>{
+
   res.json(products)
 })
 
@@ -40,5 +40,6 @@ app.get("/fetch-data",(req,res)=>{
 app.listen(3001, () => {
   console.log('Server running at http://localhost:3001/');
 });
+
 
 
